@@ -143,6 +143,23 @@
             border-radius: 2px;
         }
 
+        /* Image Styles */
+        .hero-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 0.75rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--card-shadow);
+        }
+
+        .work-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 1px solid var(--border);
+        }
+
         /* About Section */
         .about-grid {
             display: grid;
@@ -151,8 +168,8 @@
         }
 
         .profile-placeholder {
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             background: linear-gradient(135deg, var(--accent), #a855f7);
             border-radius: 50%;
             display: flex;
@@ -214,16 +231,6 @@
             border: 1px solid var(--border);
             display: flex;
             flex-direction: column;
-        }
-
-        .work-image-mock {
-            height: 160px;
-            background: linear-gradient(45deg, var(--border), var(--bg-primary));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-secondary);
-            font-weight: 500;
         }
 
         .work-content {
@@ -315,6 +322,10 @@
             h2 {
                 font-size: 1.75rem;
             }
+
+            .hero-image {
+                height: 150px;
+            }
         }
     </style>
 </head>
@@ -342,6 +353,7 @@
     <main>
         <section id="about">
             <h2>About</h2>
+            <img src="https://picsum.photos/id/1018/1024/400" alt="Landscape" class="hero-image">
             <div class="about-grid">
                 <div>
                     <div class="profile-placeholder">U</div>
@@ -390,7 +402,7 @@
             <h2>Works</h2>
             <div class="works-grid">
                 <div class="work-card">
-                    <div class="work-image-mock">Project 01</div>
+                    <img src="https://picsum.photos/id/1015/600/400" alt="Project 01" class="work-image">
                     <div class="work-content">
                         <h3>静的ポートフォリオ</h3>
                         <p>HTML、CSS、JavaScriptを1ファイルに最適化して作成した軽量なWebサイトです。レスポンシブ対応を意識して構築しました。</p>
@@ -398,7 +410,7 @@
                     </div>
                 </div>
                 <div class="work-card">
-                    <div class="work-image-mock">Project 02</div>
+                    <img src="https://picsum.photos/id/1036/600/400" alt="Project 02" class="work-image">
                     <div class="work-content">
                         <h3>タスク管理ツール (模倣)</h3>
                         <p>ブラウザのローカルストレージを利用して、外部サーバーと通信を行わずにタスクを保存・管理できるシンプルなアプリケーションです。</p>
